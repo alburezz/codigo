@@ -1,0 +1,69 @@
+Scanner  tec= new Scanner (System.in);
+        int Opcion=0;
+        String Nombre;
+        String Apellido;
+        String Especialidad;
+        String Cargo;
+        String Grado;
+        String Código;
+        int Edad;
+        boolean condicion=true;
+        while(condicion) {
+        System.out.println("----------MENU----------");
+        System.out.println("[1] Registrar Alumno");
+        System.out.println("[2] Registrar Docente");
+        System.out.println("[2] Registrar Personal Administrativo");
+        System.out.println("[0] Salir");
+        System.out.println("------------------------");
+        System.out.println("Opción: ");
+        Opcion= tec.nextInt();
+        switch (Opcion){
+        case 1:
+        System.out.println("----OPCION 1----");
+        tec.nextLine();
+        System.out.println("Ingrese Nombre del Alumno");
+        Nombre=tec.nextLine();
+        System.out.println("Ingrese Apellido del Alumno");
+        Apellido=tec.nextLine();
+        System.out.println("Ingrese Grado del Alumno");
+        Grado=tec.nextLine();
+        System.out.println("Ingrese Código del Alumno");
+        Código=tec.nextLine();
+        System.out.println("Ingrese Edad del Alumno");
+        Edad=tec.nextInt();
+        break;
+        case 2:
+        System.out.println("----OPCION 2----");
+        tec.nextLine();
+        System.out.println("Ingrese Nombre del Docente");
+        Nombre=tec.nextLine();
+        System.out.println("Ingrese Apellido del Docente");
+        Apellido=tec.nextLine();
+      System.out.println("Ingrese Especialidad del Docente");
+        Especialidad=tec.nextLine();
+        System.out.println("Ingrese Edad del Docente");
+        Edad=tec.nextInt(); 
+        break;
+        case 3:
+        System.out.println("----OPCION 3----");
+        tec.nextLine();
+        System.out.println("Ingrese Nombre del Administrador");
+        Nombre=tec.nextLine();
+        System.out.println("Ingrese Apellido del Administrador");
+        Apellido=tec.nextLine();
+      System.out.println("Ingrese Cargo Administrativo");
+        Cargo=tec.nextLine();
+        System.out.println("Ingrese Edad del Administrador");
+        Edad=tec.nextInt(); 
+        break;   
+        case 0:
+         condicion=false;
+            System.out.println("Saliste");
+        break;
+        default:
+        System.out.println("Opcion no encontrada");
+    }
+  }       
+
+    }
+    
